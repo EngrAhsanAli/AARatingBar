@@ -1,11 +1,6 @@
 use_frameworks!
 
 target 'AARatingBar_Example' do
-  pod 'AARatingBar', :path => '../'
-
-  target 'AARatingBar_Tests' do
-    inherit! :search_paths
-
+    pod 'AARatingBar', :path => '../'
     
-  end
 end

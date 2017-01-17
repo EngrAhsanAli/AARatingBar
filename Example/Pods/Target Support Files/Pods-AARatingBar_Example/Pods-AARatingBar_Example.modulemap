@@ -1,0 +1,6 @@
+framework module Pods_AARatingBar_Example {
+  umbrella header "Pods-AARatingBar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

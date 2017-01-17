@@ -1,0 +1,6 @@
+framework module AARatingBar {
+  umbrella header "AARatingBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AARatingBar (0.1.0)
+
+DEPENDENCIES:
+  - AARatingBar (from `../`)
+
+EXTERNAL SOURCES:
+  AARatingBar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AARatingBar: f92e75366f673e22e74e983110c07574279fcdd3
+
+PODFILE CHECKSUM: 5c55098bdb6387ce1d0137a98faf961f14f4e8ae
+
+COCOAPODS: 1.2.0.beta.3
