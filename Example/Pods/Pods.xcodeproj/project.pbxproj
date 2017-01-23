@@ -12,9 +12,6 @@
 		42F1CF581E290DFC0039A7EC /* AARatingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1CF571E290DFC0039A7EC /* AARatingBar.swift */; };
 		4863E9A8A37B29D17681FD4B98F6BBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		6A6EB7DD1DA71946F698C6B326FCCF07 /* AARatingBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 709072F63D9DA307FE52ABFA193019E2 /* AARatingBar-dummy.m */; };
-		B85C0EA733D4D5362A3EDB55CA28EB20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C7D208D7F92DF2FC9F29D924860BEC02 /* Pods-AARatingBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE3A6908F02CCBBD08022A0E1FA7193 /* Pods-AARatingBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB04FAB93F00BB6F7709B574FF423A06 /* Pods-AARatingBar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A93C442983E00BDA17C1E018A6C852 /* Pods-AARatingBar_Tests-dummy.m */; };
 		D9F391812B05573E4CB7594C84F15CFC /* AARatingBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74A6A6DE0F19F9BE266603775FFEEC5A /* AARatingBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1D5FF088B6A31BB5249892069E9D6D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -30,26 +27,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0021FBBADB0D25326FFEB30A7C78C980 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00FE1010C429079D91D66B10C86247C5 /* Pods-AARatingBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AARatingBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0334D9EE20FC38A630E70BDBBA7BA7CE /* Pods_AARatingBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AARatingBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6741331E08953E7D103FE1C62F3742 /* Pods-AARatingBar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AARatingBar_Example-umbrella.h"; sourceTree = "<group>"; };
 		0DF403183D724C0E542E3F70CF388703 /* AARatingBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AARatingBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110B99DAA7AD768B15CCD65FDADB0A41 /* Pods-AARatingBar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AARatingBar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1C45833FCCC19C24E199D9707D75F4A3 /* AARatingBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AARatingBar-prefix.pch"; sourceTree = "<group>"; };
-		2AE3A6908F02CCBBD08022A0E1FA7193 /* Pods-AARatingBar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AARatingBar_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2C112A5833FC10DCBA529E9A78964041 /* Pods-AARatingBar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AARatingBar_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		40A93C442983E00BDA17C1E018A6C852 /* Pods-AARatingBar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AARatingBar_Tests-dummy.m"; sourceTree = "<group>"; };
 		42F1CF571E290DFC0039A7EC /* AARatingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AARatingBar.swift; sourceTree = "<group>"; };
-		51E3A94793741114C67EA2EEFD6C5336 /* Pods-AARatingBar_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AARatingBar_Tests-resources.sh"; sourceTree = "<group>"; };
-		54235E2A997A714A9A7517D68B07E088 /* Pods-AARatingBar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AARatingBar_Tests.modulemap"; sourceTree = "<group>"; };
 		58D7B46EC2AFB064973182D598C4AAA2 /* Pods-AARatingBar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AARatingBar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D2B3335A4F2A56830AF664D62830B85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66F05566638F628BD2C25B1F0A4E4E83 /* Pods-AARatingBar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AARatingBar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		69E17BCD23E307F55EA94A69FBF14A17 /* Pods_AARatingBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AARatingBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		709072F63D9DA307FE52ABFA193019E2 /* AARatingBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AARatingBar-dummy.m"; sourceTree = "<group>"; };
 		74A6A6DE0F19F9BE266603775FFEEC5A /* AARatingBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AARatingBar-umbrella.h"; sourceTree = "<group>"; };
-		904EA9F6C6C5FB0E68C2E8B7F64A526D /* Pods-AARatingBar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AARatingBar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9497C891C12780DF2B4209C9D8128805 /* AARatingBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AARatingBar.modulemap; sourceTree = "<group>"; };
 		C166510F7F8D14A0115275F791E69025 /* Pods-AARatingBar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AARatingBar_Example.modulemap"; sourceTree = "<group>"; };
@@ -58,21 +45,12 @@
 		CF270E352F1B7ADF0BDF01A5D1C890FE /* Pods-AARatingBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AARatingBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D46356CBAC2340CDFE72776B592E83E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5AF4C79161E36FC833F63A2EC469DA /* Pods-AARatingBar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AARatingBar_Example-dummy.m"; sourceTree = "<group>"; };
-		F46E397B6C3D11B5126812EA9A2947C8 /* Pods-AARatingBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AARatingBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F4CBA9B14E431E1632E91288A62F98CD /* Pods-AARatingBar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AARatingBar_Example-resources.sh"; sourceTree = "<group>"; };
 		FDCF4EF1927ACA0F377C9D383B0AD780 /* Pods-AARatingBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AARatingBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FF84620458E85D0DF2985CC5AD9E0B8A /* AARatingBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AARatingBar.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B51D7114E76A3253833E2217B6330C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B85C0EA733D4D5362A3EDB55CA28EB20 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		932C7FEA64FA5B2B7742D10ED048A337 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,24 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1770C0B672CF436CFBAE3214F8F193BB /* Pods-AARatingBar_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0021FBBADB0D25326FFEB30A7C78C980 /* Info.plist */,
-				54235E2A997A714A9A7517D68B07E088 /* Pods-AARatingBar_Tests.modulemap */,
-				904EA9F6C6C5FB0E68C2E8B7F64A526D /* Pods-AARatingBar_Tests-acknowledgements.markdown */,
-				66F05566638F628BD2C25B1F0A4E4E83 /* Pods-AARatingBar_Tests-acknowledgements.plist */,
-				40A93C442983E00BDA17C1E018A6C852 /* Pods-AARatingBar_Tests-dummy.m */,
-				2C112A5833FC10DCBA529E9A78964041 /* Pods-AARatingBar_Tests-frameworks.sh */,
-				51E3A94793741114C67EA2EEFD6C5336 /* Pods-AARatingBar_Tests-resources.sh */,
-				2AE3A6908F02CCBBD08022A0E1FA7193 /* Pods-AARatingBar_Tests-umbrella.h */,
-				00FE1010C429079D91D66B10C86247C5 /* Pods-AARatingBar_Tests.debug.xcconfig */,
-				F46E397B6C3D11B5126812EA9A2947C8 /* Pods-AARatingBar_Tests.release.xcconfig */,
-			);
-			name = "Pods-AARatingBar_Tests";
-			path = "Target Support Files/Pods-AARatingBar_Tests";
-			sourceTree = "<group>";
-		};
 		3576F7E13431D135F17F15EFE6070EC2 /* Pods-AARatingBar_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				3576F7E13431D135F17F15EFE6070EC2 /* Pods-AARatingBar_Example */,
-				1770C0B672CF436CFBAE3214F8F193BB /* Pods-AARatingBar_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -217,7 +176,6 @@
 			children = (
 				0DF403183D724C0E542E3F70CF388703 /* AARatingBar.framework */,
 				69E17BCD23E307F55EA94A69FBF14A17 /* Pods_AARatingBar_Example.framework */,
-				0334D9EE20FC38A630E70BDBBA7BA7CE /* Pods_AARatingBar_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,14 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A73E55035EF9A324A2365B61B09E737 /* Pods-AARatingBar_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1EF13801292BA6C6095DB15EC434938 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7D208D7F92DF2FC9F29D924860BEC02 /* Pods-AARatingBar_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,23 +218,6 @@
 			name = "Pods-AARatingBar_Example";
 			productName = "Pods-AARatingBar_Example";
 			productReference = 69E17BCD23E307F55EA94A69FBF14A17 /* Pods_AARatingBar_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		90DE7C352196E07B6427537A63E3A5C3 /* Pods-AARatingBar_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BDF29D1A55EDD5352D9B2A4476D0DB2B /* Build configuration list for PBXNativeTarget "Pods-AARatingBar_Tests" */;
-			buildPhases = (
-				8D679E3927A1C2A72C0B7829FA40B84B /* Sources */,
-				3B51D7114E76A3253833E2217B6330C4 /* Frameworks */,
-				D1EF13801292BA6C6095DB15EC434938 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-AARatingBar_Tests";
-			productName = "Pods-AARatingBar_Tests";
-			productReference = 0334D9EE20FC38A630E70BDBBA7BA7CE /* Pods_AARatingBar_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F9CE51E0578E842A70FFCFBBD402587F /* AARatingBar */ = {
@@ -335,20 +268,11 @@
 			targets = (
 				F9CE51E0578E842A70FFCFBBD402587F /* AARatingBar */,
 				7904F358C96D977C216B70FFA01FF361 /* Pods-AARatingBar_Example */,
-				90DE7C352196E07B6427537A63E3A5C3 /* Pods-AARatingBar_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D679E3927A1C2A72C0B7829FA40B84B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB04FAB93F00BB6F7709B574FF423A06 /* Pods-AARatingBar_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E397F87A0EC058959AE71AAB022B7D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,76 +404,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		862DD1FE8592AF432658DE42D55381CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F46E397B6C3D11B5126812EA9A2947C8 /* Pods-AARatingBar_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AARatingBar_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AARatingBar_Tests/Pods-AARatingBar_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AARatingBar_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		87DBE68ABBB189D87BB7990D5C7A1813 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00FE1010C429079D91D66B10C86247C5 /* Pods-AARatingBar_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AARatingBar_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AARatingBar_Tests/Pods-AARatingBar_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AARatingBar_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -698,15 +552,6 @@
 			buildConfigurations = (
 				F960E1CBF48FCEE9CB8CC38382446AD4 /* Debug */,
 				70FD8A8770707759A196ED26802E90B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BDF29D1A55EDD5352D9B2A4476D0DB2B /* Build configuration list for PBXNativeTarget "Pods-AARatingBar_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				87DBE68ABBB189D87BB7990D5C7A1813 /* Debug */,
-				862DD1FE8592AF432658DE42D55381CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
