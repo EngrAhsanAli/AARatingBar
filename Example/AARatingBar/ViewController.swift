@@ -18,31 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        rating.text = "Rating: \(ratingBar.value)"
-        ratingBar.ratingDidChange = { ratingValue in
-            self.rating.text = "Rating: \(ratingValue)"
-            
-            print("RatingIsEmpty: ", self.ratingBar.isEmpty)
-            
-        }
-
-        
+        configRatingBar()
   
     }
 
     @IBAction func ratingBarInteraction(_ sender: UIButton) {
         
-        ratingBar.isEnabled = sender.isSelected
-        
-        if ratingBar.isEnabled {
-            sender.setTitle("Click to disable!", for: .normal)
-        }
-        else {
-            sender.setTitle("Click to enable!", for: .selected)
-        }
-
-        sender.isSelected = !sender.isSelected
+        ratingInteraction(sender)
         
     }
     override func didReceiveMemoryWarning() {
