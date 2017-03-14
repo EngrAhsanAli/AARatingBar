@@ -104,7 +104,7 @@ github "EngrAhsanAli/AARatingBar" "master"
 ```
 
 Then import the library in all files where you use it:
-```ruby
+```swift
 import AARatingBar
 ```
 
@@ -154,7 +154,7 @@ You can customise the rating bar appearance in the *Attributes Inspector.*
 
 You can get rating change though `ratingDidChange` closure.
 
-```ruby
+```swift
 ratingBar.ratingDidChange = { ratingValue in
 // get current selected rating
 }
