@@ -84,6 +84,13 @@ import UIKit
         }
     }
     
+    /// AAARatingBar unfilled color
+    @IBInspectable open var unfilledColor: UIColor = .lightGray {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
     /// AARatingBar Animaiton Bool
     @IBInspectable open var canAnimate: Bool = true {
         didSet{
@@ -139,11 +146,11 @@ import UIKit
     /// Draw Initial rating bar
     func drawRatingBar() {
         
-        let unFilledView = getRatingView(withIcon: unFilledIcon)
-        filledView = getRatingView(withIcon: filledIcon)
+        let unFilledView = getRatingView(withIcon: unFilledIcon, filled: false)
+        filledView = getRatingView(withIcon: filledIcon, filled: true)
         
-        addSubview(filledView)
         addSubview(unFilledView)
+        addSubview(filledView)
         
     }
     
@@ -160,7 +167,7 @@ import UIKit
     ///
     /// - Parameter text: text icon for rating
     /// - Returns: view that contained specific type of rating icons
-    func getRatingView(withIcon text: String) -> UIView {
+    func getRatingView(withIcon text: String, filled: Bool) -> UIView {
         let view = UIView(frame: self.bounds)
         view.clipsToBounds = true
         view.backgroundColor = .clear
@@ -177,6 +184,11 @@ import UIKit
             let starView = UILabel(frame: frame)
             starView.text = text
             starView.textColor = color
+            
+            if !filled {
+                starView.textColor = unfilledColor
+            }
+            
             starView.font = starView.font.withSize(ratingWidth)
             starView.sizeThatFits(fitSize)
             view.addSubview(starView)
