@@ -184,12 +184,13 @@ import UIKit
             let starView = UILabel(frame: frame)
             starView.text = text
             starView.textColor = color
+            starView.textAlignment = .center
             
             if !filled {
                 starView.textColor = unfilledColor
             }
             
-            starView.font = starView.font.withSize(ratingWidth)
+            starView.font = starView.font.withSize(bounds.height)
             starView.sizeThatFits(fitSize)
             view.addSubview(starView)
         }
