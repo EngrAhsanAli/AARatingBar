@@ -187,7 +187,7 @@ import UIKit
     /// AARatingBar Did Tapped
     ///
     /// - Parameter sender: tap gesture
-    func didTapped(_ sender: UITapGestureRecognizer){
+    @objc func didTapped(_ sender: UITapGestureRecognizer){
         
         guard isEnabled else {
             return
