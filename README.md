@@ -41,6 +41,8 @@ AARatingBar is a simple, lightweight & easy-to-use rating bar designed to get an
 
 ![](https://github.com/EngrAhsanAli/AARatingBar/blob/master/Screenshots/demo.gif)
 
+![](https://github.com/EngrAhsanAli/AARatingBar/blob/master/Screenshots/custom_font.png)
+
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -76,7 +78,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod 'AARatingBar'
+pod 'AARatingBar' , '0.1.1' 
 end
 
 ```
@@ -158,6 +160,9 @@ You can get rating change though `ratingDidChange` closure.
 ratingBar.ratingDidChange = { ratingValue in
 // get current selected rating
 }
+
+customRatingBar.starFont = UIFont.init(name: "AARatingBar", size: 10)! // sets custom font icon
+
 ```
 
 > You can check if rating is empty or not using simple property `ratingBar.isEmpty`.
@@ -178,6 +183,7 @@ You can use following variants:
 | `unFilledIcon`         | `String`       | Empty star icon              |
 | `value`                | `CGFloat`      | Current rating value         |
 | `color`                | `UIColor`      | Rating stars color           |
+| `starFont`                | `UIFont`      | Rating stars font icon file           |
 | `animationInterval`    | `TimeInterval` | Rating change animation      |
 
 <div id='section-id-156'/>

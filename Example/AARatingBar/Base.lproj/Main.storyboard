@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,15 +42,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugA-jS-2b4" customClass="AARatingBar" customModule="AARatingBar">
-                                <rect key="frame" x="61" y="115" width="199" height="45"/>
+                                <rect key="frame" x="35" y="95" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="dhH-zB-mgI"/>
-                                    <constraint firstAttribute="height" constant="45" id="gdj-n9-afM"/>
+                                    <constraint firstAttribute="width" constant="250" id="dhH-zB-mgI"/>
+                                    <constraint firstAttribute="height" constant="50" id="gdj-n9-afM"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
                                         <real key="value" value="1"/>
@@ -63,6 +60,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFJ-vf-Knf" customClass="AARatingBar" customModule="AARatingBar">
+                                <rect key="frame" x="35" y="259" width="250" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VyD-LX-974"/>
+                                    <constraint firstAttribute="width" constant="250" id="d1B-o5-FZ6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.16678944039999999" green="0.51676114959999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="filledIcon" value="B"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unFilledIcon" value="C"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -70,13 +88,16 @@
                             <constraint firstItem="ugA-jS-2b4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="95" id="GuI-S8-CsC"/>
                             <constraint firstItem="jq0-Xh-2iy" firstAttribute="top" secondItem="HCa-Vb-e5G" secondAttribute="bottom" constant="8" symbolic="YES" id="SUM-iq-Ec4"/>
                             <constraint firstAttribute="bottom" secondItem="jq0-Xh-2iy" secondAttribute="bottom" constant="80" id="XCd-Me-DkU"/>
+                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="leading" secondItem="ugA-jS-2b4" secondAttribute="leading" id="hb8-PI-zhX"/>
                             <constraint firstItem="ugA-jS-2b4" firstAttribute="centerX" secondItem="HCa-Vb-e5G" secondAttribute="centerX" id="obo-gW-oDx"/>
+                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="pMk-DH-2C3"/>
                             <constraint firstItem="HCa-Vb-e5G" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qKe-T4-Bpb"/>
                             <constraint firstItem="HCa-Vb-e5G" firstAttribute="leading" secondItem="jq0-Xh-2iy" secondAttribute="leading" id="tdi-Oj-VKe"/>
                             <constraint firstItem="HCa-Vb-e5G" firstAttribute="trailing" secondItem="jq0-Xh-2iy" secondAttribute="trailing" id="ysb-O8-Ria"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customRatingBar" destination="IFJ-vf-Knf" id="ab9-Zb-Gws"/>
                         <outlet property="rating" destination="HCa-Vb-e5G" id="MSn-Fc-BKt"/>
                         <outlet property="ratingBar" destination="ugA-jS-2b4" id="2eN-jp-Ju8"/>
                     </connections>

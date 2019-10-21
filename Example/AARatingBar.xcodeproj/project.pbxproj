@@ -14,6 +14,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		8FB0E2AD235DD5EB00BBE0B3 /* AARatingBar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FB0E2AC235DD5EB00BBE0B3 /* AARatingBar.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7AC7E8F13929CF753602AB8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8FB0E2AC235DD5EB00BBE0B3 /* AARatingBar.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AARatingBar.ttf; sourceTree = "<group>"; };
 		977DF71356E8CBBF9E109444 /* Pods-AARatingBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AARatingBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AARatingBar_Example/Pods-AARatingBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		99984C3381A59D6D28D29174 /* Pods_AARatingBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AARatingBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E3A2783599FCF60D796AB3 /* Pods-AARatingBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AARatingBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AARatingBar_Tests/Pods-AARatingBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				8FB0E2AC235DD5EB00BBE0B3 /* AARatingBar.ttf */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for AARatingBar";
@@ -165,6 +168,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -186,6 +190,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				8FB0E2AD235DD5EB00BBE0B3 /* AARatingBar.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

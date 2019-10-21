@@ -24,6 +24,27 @@ import UIKit
             setNeedsLayout()
         }
     }
+    
+    /// AARatingBar font multiplier
+    @IBInspectable open var startMultiplier: CGFloat = 5 {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
+    /// AARatingBar max font size
+    var starSizeMax: CGFloat {
+        if startMultiplier < 5 {
+            startMultiplier = 5
+        }
+        let maxSize: CGFloat = (bounds.size.width >= bounds.size.height) ? bounds.size.width : bounds.size.height
+        return maxSize / startMultiplier
+    }
+    
+    open var starFont = UIFont.systemFont(ofSize: 0)
+    
+    /// AARatingBar min font size
+    let starSizeMin: CGFloat = 10
 
     /// AARatingBar rating View
     var filledView: UIView!
@@ -167,19 +188,21 @@ import UIKit
     
         var frame = self.bounds
         frame.size.width = ratingWidth
-        
-        let fitSize = CGSize(width: ratingWidth, height: bounds.height)
-        
+                
         for position in 0 ..< maxValue {
             
             frame.origin.x = CGFloat(position) * ratingWidth
             
             let starView = UILabel(frame: frame)
             starView.text = text
+            starView.textAlignment = .center
             starView.textColor = color
-            starView.font = starView.font.withSize(ratingWidth)
-            starView.sizeThatFits(fitSize)
+            starView.numberOfLines = 1
+            starView.font = UIFont(name: starFont.fontName, size: starSizeMax)!
+            starView.adjustsFontSizeToFitWidth = true
+            starView.minimumScaleFactor = starSizeMin/starSizeMax
             view.addSubview(starView)
+
         }
         return view
     }
