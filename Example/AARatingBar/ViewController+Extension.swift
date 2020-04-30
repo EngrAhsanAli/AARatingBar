@@ -12,19 +12,19 @@ import UIKit
 extension ViewController {
     
     func configRatingBar() {
-        rating.text = "Rating: \(ratingBar.value)"
-        ratingBar.ratingDidChange = { ratingValue in
+        rating.text = "Rating: \(customRatingBar.value)"
+        customRatingBar.ratingDidChange = { ratingValue in
             self.rating.text = "Rating: \(ratingValue)"
             
-            print("Rating Is Empty: ", self.ratingBar.isEmpty)
+            print("Rating Is Empty: ", self.customRatingBar.isEmpty)
             
         }
     }
     
     func ratingInteraction(_ sender: UIButton) {
-        ratingBar.isEnabled = sender.isSelected
+        customRatingBar.isEnabled = sender.isSelected
         
-        if ratingBar.isEnabled {
+        if customRatingBar.isEnabled {
             sender.setTitle("Click to disable!", for: .normal)
         }
         else {

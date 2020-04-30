@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,9 +20,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq0-Xh-2iy">
-                                <rect key="frame" x="16" y="458" width="288" height="30"/>
+                                <rect key="frame" x="66.5" y="518" width="187" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="iZz-XW-SbR"/>
+                                    <constraint firstAttribute="height" constant="30" id="Bzw-A9-ame"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                 <state key="normal" title="Click to disable!">
@@ -33,40 +33,61 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCa-Vb-e5G">
-                                <rect key="frame" x="16" y="420" width="288" height="30"/>
+                                <rect key="frame" x="66.5" y="480" width="187" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6IT-va-ggO"/>
+                                    <constraint firstAttribute="height" constant="30" id="yLU-nj-C7S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugA-jS-2b4" customClass="AARatingBar" customModule="AARatingBar">
-                                <rect key="frame" x="35" y="95" width="250" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bij-yo-wTB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="dhH-zB-mgI"/>
-                                    <constraint firstAttribute="height" constant="50" id="gdj-n9-afM"/>
+                                    <constraint firstAttribute="height" constant="385" id="FkM-y7-zM6"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.16678944039999999" green="0.51676114959999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="DDh-yY-KJR">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DDh-yY-KJR" id="xF3-aA-Cl8">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugA-jS-2b4" customClass="AARatingBar" customModule="AARatingBar">
+                                                    <rect key="frame" x="35" y="11" width="250" height="28"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                            <color key="value" red="0.16678944039999999" green="0.51676114959999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ugA-jS-2b4" firstAttribute="top" secondItem="xF3-aA-Cl8" secondAttribute="topMargin" id="1Ap-0c-Cfp"/>
+                                                <constraint firstItem="ugA-jS-2b4" firstAttribute="centerY" secondItem="xF3-aA-Cl8" secondAttribute="centerY" id="E29-F8-yR1"/>
+                                                <constraint firstItem="ugA-jS-2b4" firstAttribute="leading" secondItem="xF3-aA-Cl8" secondAttribute="leadingMargin" constant="20" id="Wb4-4Z-4nY"/>
+                                                <constraint firstItem="ugA-jS-2b4" firstAttribute="centerX" secondItem="xF3-aA-Cl8" secondAttribute="centerX" id="eTd-Dq-LWZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="dVb-PM-7Hd"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="clw-gy-xCp"/>
+                                </connections>
+                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFJ-vf-Knf" customClass="AARatingBar" customModule="AARatingBar">
-                                <rect key="frame" x="35" y="259" width="250" height="50"/>
+                                <rect key="frame" x="35" y="412" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="VyD-LX-974"/>
-                                    <constraint firstAttribute="width" constant="250" id="d1B-o5-FZ6"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
                                         <integer key="value" value="1"/>
@@ -84,22 +105,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="6GY-Tb-Wlh"/>
-                            <constraint firstItem="ugA-jS-2b4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="95" id="GuI-S8-CsC"/>
-                            <constraint firstItem="jq0-Xh-2iy" firstAttribute="top" secondItem="HCa-Vb-e5G" secondAttribute="bottom" constant="8" symbolic="YES" id="SUM-iq-Ec4"/>
-                            <constraint firstAttribute="bottom" secondItem="jq0-Xh-2iy" secondAttribute="bottom" constant="80" id="XCd-Me-DkU"/>
-                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="leading" secondItem="ugA-jS-2b4" secondAttribute="leading" id="hb8-PI-zhX"/>
-                            <constraint firstItem="ugA-jS-2b4" firstAttribute="centerX" secondItem="HCa-Vb-e5G" secondAttribute="centerX" id="obo-gW-oDx"/>
-                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="pMk-DH-2C3"/>
-                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qKe-T4-Bpb"/>
-                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="leading" secondItem="jq0-Xh-2iy" secondAttribute="leading" id="tdi-Oj-VKe"/>
-                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="trailing" secondItem="jq0-Xh-2iy" secondAttribute="trailing" id="ysb-O8-Ria"/>
+                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="centerX" secondItem="bij-yo-wTB" secondAttribute="centerX" id="8bw-TU-Wnc"/>
+                            <constraint firstItem="bij-yo-wTB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8dw-Mb-3zL"/>
+                            <constraint firstAttribute="trailing" secondItem="bij-yo-wTB" secondAttribute="trailing" id="Inq-zf-Pld"/>
+                            <constraint firstItem="jq0-Xh-2iy" firstAttribute="top" secondItem="HCa-Vb-e5G" secondAttribute="bottom" constant="8" symbolic="YES" id="O9g-gp-QLk"/>
+                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="centerX" secondItem="HCa-Vb-e5G" secondAttribute="centerX" id="PAv-1W-Hpi"/>
+                            <constraint firstItem="bij-yo-wTB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="RBt-FD-YYh"/>
+                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="top" secondItem="bij-yo-wTB" secondAttribute="bottom" constant="27" id="aG3-xw-lOz"/>
+                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="top" secondItem="IFJ-vf-Knf" secondAttribute="bottom" constant="18" id="hWQ-OI-t6n"/>
+                            <constraint firstAttribute="bottom" secondItem="jq0-Xh-2iy" secondAttribute="bottom" constant="20" symbolic="YES" id="jR3-VH-BuL"/>
+                            <constraint firstItem="IFJ-vf-Knf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="ku3-sJ-dHh"/>
+                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="trailing" secondItem="jq0-Xh-2iy" secondAttribute="trailing" id="z9T-IP-UMa"/>
+                            <constraint firstItem="HCa-Vb-e5G" firstAttribute="leading" secondItem="jq0-Xh-2iy" secondAttribute="leading" id="zDr-WC-2DR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="customRatingBar" destination="IFJ-vf-Knf" id="ab9-Zb-Gws"/>
                         <outlet property="rating" destination="HCa-Vb-e5G" id="MSn-Fc-BKt"/>
-                        <outlet property="ratingBar" destination="ugA-jS-2b4" id="2eN-jp-Ju8"/>
+                        <outlet property="tableView" destination="bij-yo-wTB" id="V7U-0B-yt3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
