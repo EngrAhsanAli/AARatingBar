@@ -1,3 +1,6 @@
+![](https://github.com/EngrAhsanAli/AARatingBar/blob/master/AARatingBar.png)
+
+
 # Table of Contents
 
 - [AARatingBar](#section-id-4)
@@ -21,7 +24,7 @@
 
 #AARatingBar
 
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AARatingBar.svg)](http://cocoadocs.org/docsets/AARatingBar) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AARatingBar.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AARatingBar) 
+[![Swift 5.2](https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AARatingBar.svg)](http://cocoadocs.org/docsets/AARatingBar) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AARatingBar.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AARatingBar) 
 ![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg) [![CocoaPods](https://img.shields.io/cocoapods/p/AARatingBar.svg)]()
 
 
@@ -78,7 +81,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod 'AARatingBar' , '0.1.1' 
+pod 'AARatingBar'
 end
 
 ```

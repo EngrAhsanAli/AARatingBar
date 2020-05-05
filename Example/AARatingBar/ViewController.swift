@@ -13,21 +13,29 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var rating: UILabel!
 
-    @IBOutlet weak var customRatingBar: AARatingBar!
+    @IBOutlet weak var customRatingBar: UIView!
     
     @IBOutlet weak var tableView: UITableView!
     
     var data = [RatingModel]()
     
+    var ratingbar: AARatingBar?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
         
-        configRatingBar()
-  
+        let ratingbar = customRatingBar.aa_addRatingBar()
         
-        customRatingBar.starFont = UIFont.init(name: "AARatingBar", size: 10)!
+        self.rating.text = "Rating: \(ratingbar.value)"
+        ratingbar.starFont = UIFont.init(name: "AARatingBar", size: 10)!
+        ratingbar.ratingDidChange = { ratingValue in
+            self.rating.text = "Rating: \(ratingValue)"
+            print("Rating Is Empty: ",ratingbar.isEmpty)
+        }
         
+        self.ratingbar = ratingbar
         
         for i in 1...10 {
             data.append(RatingModel.init(rating: 0, isEnabled: true, stars: i))

@@ -85,7 +85,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="clw-gy-xCp"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFJ-vf-Knf" customClass="AARatingBar" customModule="AARatingBar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFJ-vf-Knf">
                                 <rect key="frame" x="35" y="412" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>

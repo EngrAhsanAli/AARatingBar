@@ -26,7 +26,7 @@ import UIKit
     }
     
     /// AARatingBar font multiplier
-    @IBInspectable open var startMultiplier: CGFloat = 5 {
+    @IBInspectable open var fontMultiplier: CGFloat = 5 {
         didSet {
             setNeedsLayout()
         }
@@ -34,14 +34,19 @@ import UIKit
     
     /// AARatingBar max font size
     var starSizeMax: CGFloat {
-        if startMultiplier < 5 {
-            startMultiplier = 5
+        if fontMultiplier < 5 {
+            fontMultiplier = 5
         }
         let maxSize: CGFloat = (bounds.size.width >= bounds.size.height) ? bounds.size.width : bounds.size.height
-        return maxSize / startMultiplier
+        return maxSize / fontMultiplier
     }
     
-    open var starFont = UIFont.systemFont(ofSize: 0)
+    open var starFont = UIFont.systemFont(ofSize: 0) {
+        didSet {
+            drawRatingBar()
+            setNeedsDisplay()
+        }
+    }
     
     /// AARatingBar min font size
     let starSizeMin: CGFloat = 10
@@ -70,7 +75,6 @@ import UIKit
             
             value = isAbsValue ? round(value+0.3) : value
             
-            ratingDidChange?(value)
             setNeedsLayout()
         }
     }
@@ -151,6 +155,7 @@ import UIKit
     
     open override func draw(_ rect: CGRect) {
         super.draw(rect)
+        
         drawRatingBar()
         ratingValueChange()
         setupTapGesture()
@@ -159,10 +164,10 @@ import UIKit
     
     /// Draw Initial rating bar
     func drawRatingBar() {
-        
+        subviews.forEach { $0.removeFromSuperview() }
         let unFilledView = getRatingView(withIcon: unFilledIcon)
         filledView = getRatingView(withIcon: filledIcon)
-        
+        print("im ca")
         addSubview(filledView)
         addSubview(unFilledView)
         
@@ -226,5 +231,6 @@ import UIKit
     func ratingValueChange() {
         let rating = bounds.size.width * value / _maxValue
         self.filledView.frame.size.width = rating
+        ratingDidChange?(value)
     }
 }

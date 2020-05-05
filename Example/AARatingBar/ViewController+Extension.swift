@@ -11,17 +11,10 @@ import UIKit
 
 extension ViewController {
     
-    func configRatingBar() {
-        rating.text = "Rating: \(customRatingBar.value)"
-        customRatingBar.ratingDidChange = { ratingValue in
-            self.rating.text = "Rating: \(ratingValue)"
-            
-            print("Rating Is Empty: ", self.customRatingBar.isEmpty)
-            
-        }
-    }
-    
     func ratingInteraction(_ sender: UIButton) {
+        guard let customRatingBar = ratingbar else {
+            return
+        }
         customRatingBar.isEnabled = sender.isSelected
         
         if customRatingBar.isEnabled {
