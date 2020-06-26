@@ -26,8 +26,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         
-        let ratingbar = customRatingBar.aa_addRatingBar()
-        
+        let ratingbar = customRatingBar.aa_addRatingBar { $0 }
+        ratingbar.fontMultiplier = 10
+        ratingbar.spaceOffset = 1.2
         self.rating.text = "Rating: \(ratingbar.value)"
         ratingbar.starFont = UIFont.init(name: "AARatingBar", size: 10)!
         ratingbar.ratingDidChange = { ratingValue in

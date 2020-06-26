@@ -28,9 +28,22 @@ import UIKit
     /// AARatingBar font multiplier
     @IBInspectable open var fontMultiplier: CGFloat = 5 {
         didSet {
+            drawRatingBar()
             setNeedsLayout()
         }
     }
+    
+    /// AARatingBar space offset
+    @IBInspectable open var spaceOffset: CGFloat = 1 {
+        didSet {
+            if spaceOffset <= 0 {
+                spaceOffset = 1
+            }
+            drawRatingBar()
+            setNeedsLayout()
+        }
+    }
+    
     
     /// AARatingBar max font size
     var starSizeMax: CGFloat {
@@ -56,11 +69,14 @@ import UIKit
     
     /// AARatingBar rating bar width
     var ratingWidth: CGFloat {
-        return bounds.size.width / _maxValue
+        return bounds.size.width / _maxValue / spaceOffset
     }
     
     /// AARatingBar change listner
     open var ratingDidChange: ((CGFloat) -> Void)?
+    
+    /// Star text allignment
+    open var starAlignment: NSTextAlignment = .center
     
     /// AARatingBar rating value
     @IBInspectable open var value: CGFloat = 0 {
@@ -155,19 +171,16 @@ import UIKit
     
     open override func draw(_ rect: CGRect) {
         super.draw(rect)
-        
         drawRatingBar()
         ratingValueChange()
         setupTapGesture()
     }
-    
     
     /// Draw Initial rating bar
     func drawRatingBar() {
         subviews.forEach { $0.removeFromSuperview() }
         let unFilledView = getRatingView(withIcon: unFilledIcon)
         filledView = getRatingView(withIcon: filledIcon)
-        print("im ca")
         addSubview(filledView)
         addSubview(unFilledView)
         
@@ -190,7 +203,6 @@ import UIKit
         let view = UIView(frame: self.bounds)
         view.clipsToBounds = true
         view.backgroundColor = .clear
-    
         var frame = self.bounds
         frame.size.width = ratingWidth
                 
@@ -200,7 +212,7 @@ import UIKit
             
             let starView = UILabel(frame: frame)
             starView.text = text
-            starView.textAlignment = .center
+            starView.textAlignment = starAlignment
             starView.textColor = color
             starView.numberOfLines = 1
             starView.font = UIFont(name: starFont.fontName, size: starSizeMax)!
@@ -209,6 +221,7 @@ import UIKit
             view.addSubview(starView)
 
         }
+        
         return view
     }
     
