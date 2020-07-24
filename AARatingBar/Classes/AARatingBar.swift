@@ -91,7 +91,7 @@ import UIKit
             
             value = isAbsValue ? round(value+0.3) : value
             
-            setNeedsLayout()
+            setNeedsDisplay()
         }
     }
     
