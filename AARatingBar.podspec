@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AARatingBar'
-s.version          = '1.1'
+s.version          = '1.2'
 s.summary          = 'AARatingBar is a simple, lightweight & easy-to-use rating bar designed to get and set ratings in iOS, written in Swift.'
 
 s.description      = <<-DESC

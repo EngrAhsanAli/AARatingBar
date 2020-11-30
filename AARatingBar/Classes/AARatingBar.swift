@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @IBDesignable open class AARatingBar: UIView {
     
     /// AARatingBar filled icon
@@ -230,10 +229,9 @@ import UIKit
     /// - Parameter sender: tap gesture
     @objc func didTapped(_ sender: UITapGestureRecognizer){
         
-        guard isEnabled else {
-            return
-        }
-        self.value = sender.location(in: self).x / ratingWidth
+        guard isEnabled else { return }
+        
+        self.value = (sender.location(in: self).x) / (ratingSize / _maxValue)
         
         UIView.animate(withDuration: _animationInterval) {
             self.ratingValueChange()
@@ -242,8 +240,14 @@ import UIKit
     
     /// Change rating frame
     func ratingValueChange() {
-        let rating = bounds.size.width * value / _maxValue
+        let rating = ratingSize * value / _maxValue
         self.filledView.frame.size.width = rating
         ratingDidChange?(value)
+    }
+    
+    var ratingSize: CGFloat {
+        var width: CGFloat = 0
+        filledView.subviews.forEach { width += $0.bounds.size.width }
+        return width
     }
 }

@@ -27,8 +27,9 @@ class ViewController: UIViewController {
 
         
         let ratingbar = customRatingBar.aa_addRatingBar { $0 }
-        ratingbar.fontMultiplier = 10
-        ratingbar.spaceOffset = 1.2
+//        ratingbar.fontMultiplier = 10
+//        ratingbar.spaceOffset = 1.2
+        
         self.rating.text = "Rating: \(ratingbar.value)"
         ratingbar.starFont = UIFont.init(name: "AARatingBar", size: 10)!
         ratingbar.ratingDidChange = { ratingValue in
@@ -77,6 +78,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         ratingbar.isEnabled = item.isEnabled
         ratingbar.value = item.rating
         ratingbar.maxValue = item.stars
+//        ratingbar.spaceOffset = (CGFloat(item.stars <= 5 ? 2 : (1/item.stars)))
+//        ratingbar.starAlignment = .left
         ratingbar.ratingDidChange = {
             self.data[indexPath.row].rating = $0
             print("New rating ", self.data[indexPath.row].rating)
